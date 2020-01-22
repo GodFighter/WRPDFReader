@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WRPDFReader'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'PDF阅读器'
 
 # This description is used to generate tags and improve search results.
@@ -26,26 +26,33 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/GodFighter/WRPDFReader.git', :tag => s.version.to_s }
   # s.social_media_url = 'http://weibo.com/huigedang/home?wvr=5&lf=reg'
 
-  s.ios.deployment_target = '9.0'
+    s.ios.deployment_target = '9.0'
+    s.swift_version = '5.0'
 
   s.subspec 'Config' do |ss|
-      ss.source_files = 'WRPDFReader/Classes/Model/Config/*.swift'
+      ss.source_files = 'WRPDFReader/Classes/Config/*.swift'
   end
 
     s.subspec 'Outlines' do |ss|
-        ss.source_files = 'WRPDFReader/Classes/Model/Outlines/*.swift'
+        ss.source_files = 'WRPDFReader/Classes/Outlines/*.swift'
+        ss.dependency 'WRPDFReader/Classes/Config'
     end
 
     s.subspec 'Search' do |ss|
-        ss.source_files = 'WRPDFReader/Classes/Model/Search/*.swift'
-    end
+        ss.source_files = 'WRPDFReader/Classes/Search/*.swift'
+        ss.dependency 'WRPDFReader/Classes/Config'
+   end
 
     s.subspec 'ViewControllers' do |ss|
-        ss.source_files = 'WRPDFReader/Classes/Model/ViewControllers/*.swift'
+        ss.source_files = 'WRPDFReader/Classes/ViewControllers/*.swift'
+        ss.dependency 'WRPDFReader/Classes/Config'
+        ss.dependency 'WRPDFReader/Classes/Outlines'
+        ss.dependency 'WRPDFReader/Classes/Search'
     end
 
     s.subspec 'Views' do |ss|
-        ss.source_files = 'WRPDFReader/Classes/Model/Views/*.swift'
+        ss.source_files = 'WRPDFReader/Classes/Views/*.swift'
+        ss.dependency 'WRPDFReader/Classes/Config'
     end
 
   # s.resource_bundles = {
@@ -54,5 +61,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'WRPDFModel', '~> 0.0.2'
+    s.dependency 'WRPDFModel', '~> 0.0.2'
+    s.dependency 'WRTextKit', '~> 1.3.8'
 end
