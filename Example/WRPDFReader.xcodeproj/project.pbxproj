@@ -219,11 +219,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-WRPDFReader_Example/Pods-WRPDFReader_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/WRPDFModel/WRPDFModel.framework",
 				"${BUILT_PRODUCTS_DIR}/WRPDFReader/WRPDFReader.framework",
+				"${BUILT_PRODUCTS_DIR}/WRTextKit/WRTextKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRPDFModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRPDFReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRTextKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
