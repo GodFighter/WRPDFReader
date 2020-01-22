@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WRPDFReader'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'PDF阅读器'
 
 # This description is used to generate tags and improve search results.
@@ -41,6 +41,7 @@ Pod::Spec.new do |s|
     s.subspec 'Search' do |ss|
         ss.source_files = 'WRPDFReader/Classes/Search/*.swift'
         ss.dependency 'WRPDFReader/Config'
+        ss.dependency 'WRPDFReader/Outlines'
    end
 
     s.subspec 'ViewControllers' do |ss|
