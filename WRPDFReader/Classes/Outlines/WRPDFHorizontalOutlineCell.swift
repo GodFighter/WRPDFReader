@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import WRPDFReader
 import WRPDFModel
 
 class WRPDFHorizontalOutlineCell: UICollectionViewCell {
