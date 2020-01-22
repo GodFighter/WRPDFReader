@@ -13,6 +13,10 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		BB39DCE723D7EBE700501665 /* 投资的常识.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BB39DCE623D7EBE600501665 /* 投资的常识.pdf */; };
+		BB39DCE923D7EC4400501665 /* WRPDFModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB39DCE823D7EC4400501665 /* WRPDFModel.framework */; };
+		BB39DCEB23D7EC4400501665 /* WRPDFReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB39DCEA23D7EC4400501665 /* WRPDFReader.framework */; };
+		BB39DCED23D7EC4400501665 /* WRTextKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB39DCEC23D7EC4400501665 /* WRTextKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		9416F627E4F2EB0BC780C0EB /* Pods_WRPDFReader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WRPDFReader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		986E8CFC111F45323DA1B9C7 /* Pods-WRPDFReader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WRPDFReader_Example.debug.xcconfig"; path = "Target Support Files/Pods-WRPDFReader_Example/Pods-WRPDFReader_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B9083520881852174242CA44 /* Pods_WRPDFReader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WRPDFReader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB39DCE623D7EBE600501665 /* 投资的常识.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "投资的常识.pdf"; sourceTree = "<group>"; };
+		BB39DCE823D7EC4400501665 /* WRPDFModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WRPDFModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB39DCEA23D7EC4400501665 /* WRPDFReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WRPDFReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB39DCEC23D7EC4400501665 /* WRTextKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WRTextKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C179FA30CFF2DC74A6E0AF72 /* WRPDFReader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WRPDFReader.podspec; path = ../WRPDFReader.podspec; sourceTree = "<group>"; };
 		D6868C3EB623D424E65959CA /* Pods-WRPDFReader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WRPDFReader_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WRPDFReader_Tests/Pods-WRPDFReader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCFC6098A407B1F16F8A2E3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -39,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB39DCE923D7EC4400501665 /* WRPDFModel.framework in Frameworks */,
+				BB39DCEB23D7EC4400501665 /* WRPDFReader.framework in Frameworks */,
+				BB39DCED23D7EC4400501665 /* WRTextKit.framework in Frameworks */,
 				37C51C5B50F18ABE918170BC /* Pods_WRPDFReader_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +76,7 @@
 				607FACD11AFB9204008FA782 /* Products */,
 				39647E82BB2E44AD997A223C /* Pods */,
 				F94DBD046AB35CD3E463BBBC /* Frameworks */,
+				BB39DCE523D7EBCB00501665 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +120,20 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		BB39DCE523D7EBCB00501665 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB39DCE623D7EBE600501665 /* 投资的常识.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F94DBD046AB35CD3E463BBBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB39DCE823D7EC4400501665 /* WRPDFModel.framework */,
+				BB39DCEA23D7EC4400501665 /* WRPDFReader.framework */,
+				BB39DCEC23D7EC4400501665 /* WRTextKit.framework */,
 				9416F627E4F2EB0BC780C0EB /* Pods_WRPDFReader_Example.framework */,
 				B9083520881852174242CA44 /* Pods_WRPDFReader_Tests.framework */,
 			);
@@ -179,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB39DCE723D7EBE700501665 /* 投资的常识.pdf in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

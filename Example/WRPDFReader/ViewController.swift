@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WRPDFReader
 
 class ViewController: UIViewController {
 
