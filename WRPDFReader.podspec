@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WRPDFReader'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'PDF阅读器'
 
 # This description is used to generate tags and improve search results.
@@ -43,17 +43,17 @@ Pod::Spec.new do |s|
         ss.dependency 'WRPDFReader/Classes/Config'
    end
 
-    s.subspec 'ViewControllers' do |ss|
-        ss.source_files = 'WRPDFReader/Classes/ViewControllers/*.swift'
-        ss.dependency 'WRPDFReader/Classes/Config'
-        ss.dependency 'WRPDFReader/Classes/Outlines'
-        ss.dependency 'WRPDFReader/Classes/Search'
-    end
+    #s.subspec 'ViewControllers' do |ss|
+    #    ss.source_files = 'WRPDFReader/Classes/ViewControllers/*.swift'
+    #    ss.dependency 'WRPDFReader/Classes/Config'
+    #    ss.dependency 'WRPDFReader/Classes/Outlines'
+    #    ss.dependency 'WRPDFReader/Classes/Search'
+    #end
 
-    s.subspec 'Views' do |ss|
-        ss.source_files = 'WRPDFReader/Classes/Views/*.swift'
-        ss.dependency 'WRPDFReader/Classes/Config'
-    end
+    #s.subspec 'Views' do |ss|
+    #    ss.source_files = 'WRPDFReader/Classes/Views/*.swift'
+    #    ss.dependency 'WRPDFReader/Classes/Config'
+    #end
 
   # s.resource_bundles = {
   #   'WRPDFReader' => ['WRPDFReader/Assets/*.png']
