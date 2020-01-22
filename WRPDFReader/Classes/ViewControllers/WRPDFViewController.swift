@@ -79,24 +79,6 @@ import WRPDFModel
     @objc func action_back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
-    internal static func color(_ size : CGSize, _ color : UIColor) -> UIImage? {
-        
-        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
-        
-        guard let context = UIGraphicsGetCurrentContext() else{
-            return nil
-        }
-        
-        color.setFill()
-        context.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
-        
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return image
-    }
-
 }
 
 //MARK: -

@@ -44,7 +44,7 @@ import WRPDFModel
 
         self.navigationItem.leftBarButtonItems = leftItems
 
-        self.navigationController?.navigationBar.setBackgroundImage(WRPDFViewController.color((self.navigationController?.navigationBar.bounds.size)!, WRPDFReaderConfig.shared.navigationBarColor)
+        self.navigationController?.navigationBar.setBackgroundImage(WRPDFReaderConfig.color((self.navigationController?.navigationBar.bounds.size)!, WRPDFReaderConfig.shared.navigationBarColor)
             , for: .default)
         // 纯色的图片，isTranslucent为no，会从y=64开始绘制
         self.navigationController?.navigationBar.isTranslucent = true

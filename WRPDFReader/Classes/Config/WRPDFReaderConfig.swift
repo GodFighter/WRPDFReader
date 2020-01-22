@@ -130,5 +130,20 @@ open class WRPDFReaderConfig: NSObject {
         return manager
     }()
 
-
+    internal static func color(_ size : CGSize, _ color : UIColor) -> UIImage? {
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
+        
+        guard let context = UIGraphicsGetCurrentContext() else{
+            return nil
+        }
+        
+        color.setFill()
+        context.fill(CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
 }

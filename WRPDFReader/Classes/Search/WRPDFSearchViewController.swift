@@ -64,7 +64,7 @@ class WRPDFSearchViewController: UIViewController {
             stopBarButtonItem = stopItem
         }
         
-        self.navigationController?.navigationBar.setBackgroundImage(WRPDFViewController.color((self.navigationController?.navigationBar.bounds.size)!, WRPDFReaderConfig.shared.navigationBarColor)
+        self.navigationController?.navigationBar.setBackgroundImage(WRPDFReaderConfig.color((self.navigationController?.navigationBar.bounds.size)!, WRPDFReaderConfig.shared.navigationBarColor)
             , for: .default)
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.navigationBar.tintColor = WRPDFReaderConfig.shared.navigationTintColor

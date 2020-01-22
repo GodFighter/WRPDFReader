@@ -35,32 +35,33 @@ Pod::Spec.new do |s|
 
     s.subspec 'Outlines' do |ss|
         ss.source_files = 'WRPDFReader/Classes/Outlines/*.swift'
-        ss.dependency 'WRPDFReader/Classes/Config'
+        ss.dependency 'WRPDFReader/Config'
     end
 
     s.subspec 'Search' do |ss|
         ss.source_files = 'WRPDFReader/Classes/Search/*.swift'
-        ss.dependency 'WRPDFReader/Classes/Config'
+        ss.dependency 'WRPDFReader/Config'
    end
 
-    #s.subspec 'ViewControllers' do |ss|
-    #    ss.source_files = 'WRPDFReader/Classes/ViewControllers/*.swift'
-    #    ss.dependency 'WRPDFReader/Classes/Config'
-    #    ss.dependency 'WRPDFReader/Classes/Outlines'
-    #    ss.dependency 'WRPDFReader/Classes/Search'
-    #end
+    s.subspec 'ViewControllers' do |ss|
+        ss.source_files = 'WRPDFReader/Classes/ViewControllers/*.swift'
+        ss.dependency 'WRPDFReader/Config'
+        ss.dependency 'WRPDFReader/Outlines'
+        ss.dependency 'WRPDFReader/Search'
+        ss.dependency 'WRPDFReader/Views'
+    end
 
-    #s.subspec 'Views' do |ss|
-    #    ss.source_files = 'WRPDFReader/Classes/Views/*.swift'
-    #    ss.dependency 'WRPDFReader/Classes/Config'
-    #end
+    s.subspec 'Views' do |ss|
+        ss.source_files = 'WRPDFReader/Classes/Views/*.swift'
+        ss.dependency 'WRPDFReader/Config'
+    end
 
-  # s.resource_bundles = {
-  #   'WRPDFReader' => ['WRPDFReader/Assets/*.png']
-  # }
+   #s.resource_bundles = {
+   #  'WRPDFReader' => ['WRPDFReader/Assets/*.png']
+   #}
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   #s.public_header_files = 'Pod/Classes/**/*.h'
+   #s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'WRPDFModel', '~> 0.0.2'
     s.dependency 'WRTextKit', '~> 1.3.8'
 end
